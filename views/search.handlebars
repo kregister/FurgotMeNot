@@ -17,11 +17,11 @@
       <div class="form-group row">
         <div class="col-sm-5">
           <label for="house">Type of Pet:</label>
-          <select name="genus" id="genus"> 
+          <select name="genus" id="genus">
             <option value="Dog">Dog</option>
             <option value="Cat">Cat</option>
-            <option value="Bird">Bird</option>
-            <option value="Rodent">Rodent</option>
+            <!-- <option value="Bird">Bird</option>
+            <option value="Rodent">Rodent</option> -->
           </select>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <div class="form-group row">
             <div class="col-sm-5">
               <label for="cat">Cat-Friendly:</label>
-                <select name="cat_friendly" id="cat_friendly"> 
+                <select name="cat_friendly" id="cat_friendly">
                   <option value="0">--No--</option>
                   <option value="1">--Yes--</option>
                 </select>
@@ -85,7 +85,7 @@
           <div class="form-group row">
             <div class="col-sm-5">
               <label for="dog">Dog-Friendly:</label>
-                <select name="dog_friendly" id="dog_friendly"> 
+                <select name="dog_friendly" id="dog_friendly">
                   <option value="0">--No--</option>
                   <option value="1">--Yes--</option>
                 </select>
@@ -96,7 +96,7 @@
           <div class="form-group row">
             <div class="col-sm-5">
               <label for="food">Food-Aggressive:</label>
-                <select name="food_aggressive" id="food_aggressive"> 
+                <select name="food_aggressive" id="food_aggressive">
                 <option value="1">--Yes--</option>
                 <option value="0">--No--</option>
                 </select>
@@ -107,7 +107,7 @@
           <div class="form-group row">
             <div class="col-sm-5">
               <label for="house">House-Trained:</label>
-              <select name="house_trained" id="house_trained"> 
+              <select name="house_trained" id="house_trained">
               <option value="0">--No--</option>
               <option value="1">--Yes--</option>
               </select>
@@ -116,7 +116,7 @@
 
 
           <button type="submit">Place for Addoption!</button>
-          </form>    
+          </form>
       </div>
 
 
@@ -133,9 +133,9 @@
               <label for="un">Picture 1:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_two" method="post">
           <div class="form-group row">
@@ -143,9 +143,9 @@
               <label for="un">Picture 2:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_three" method="post">
           <div class="form-group row">
@@ -153,9 +153,9 @@
               <label for="un">Picture 3:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_four" method="post">
           <div class="form-group row">
@@ -163,9 +163,9 @@
               <label for="un">Picture 4:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_five" method="post">
           <div class="form-group row">
@@ -173,14 +173,14 @@
               <label for="un">Picture 5:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
 
 
-        </div>  
-        <div class="col-md-1">                             
-        </div>       
-  </div> 
-</div>               
+        </div>
+        <div class="col-md-1">
+        </div>
+  </div>
+</div>

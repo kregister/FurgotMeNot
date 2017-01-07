@@ -1,186 +1,233 @@
 <div class="row">
   <div class="container">
-    <div class="col-md-1">
+    <div class="col-md-12">
     </div>
-    <div class="col-md-4" id="newUserT">
-      <div class="col-md-12" ><h1 class="adoptions3">Pet Information</h1>
+    <div class="col-md-5" id="newUserT">
+      <div class="col-md-12">
+        <h1 class="adoptions3">Pet Information</h1>
       </div>
       <br>
       <form  action="/postpet" method="POST">
-      <div class="form-group row">
-        <div class="col-md-5" >
-          <label for="un" class="col-sm-4 control-label">Name:</label>
-          <input type="text" id="un" name="pets_name">
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <div class="col-sm-5">
-          <label for="house">Type of Pet:</label>
-          <select name="genus" id="genus"> 
-            <option value="Dog">Dog</option>
-            <option value="Cat">Cat</option>
-            <option value="Bird">Bird</option>
-            <option value="Rodent">Rodent</option>
-          </select>
-        </div>
-      </div>
-
-          <div class="form-group row">
-            <div class="col-sm-5">
-                <label for="em" class="col-sm-4 control-label">Breed:</label>
-                <input type="text" id="em" name="breed_name">
-            </div>
-          </div>
-
-
-          <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="age" class="col-sm-4 control-label">Age:</label>
-              <input type="text" id="age" name="age">
-            </div>
-          </div>
-
 
         <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="fix">Fixed:</label>
-              <select name="fixed" id="fixed">
-                <option value="0">--No--</option>
-                <option value="1">--Yes--</option>
+          <div class="col-sm-10">
+            <label class="col-sm-6" for="house">Type of Pet:</label>
+            <select name="genus" id="genus" class="col-sm-5">
+              <option value="0"> Please Select </option>
+              <option value="Dog"> Dog </option>
+              <option value="Cat"> Cat </option>
+              <!-- <option value="Bird">Bird</option>
+              <option value="Rodent">Rodent</option> -->
+            </select>
+          </div>
+        </div>
+
+      <div class="form-group row">
+        <div class="col-md-10" >
+          <label for="un" class="col-sm-2 control-label">Name:</label>
+          <input type="text" id="un" name="pets_name" class="form-control" placeholder="Pets Name">
+        </div>
+      </div>
+
+          <div class="form-group row">
+            <div class="col-sm-10">
+                <label for="em" class="col-sm-2 control-label">Breed:</label>
+                <input type="text" id="em" name="breed_name" class="form-control" placeholder="Breed Type or Name">
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="fix">Gender:</label>
+              <select name="fixed" id="fixed" class="col-sm-5">
+                <option value="0"> Gender </option>
+                <option value="1"> Male </option>
+                <option value="2"> Female </option>
               </select>
             </div>
           </div>
 
           <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="shot">Shots:</label>
-              <select name="shots" id="shots">
-                <option value="0">--No--</option>
-                <option value="1">--Yes--</option>
+              <div class="col-sm-12">
+                <label class="col-sm-2" for="fix">Age:</label>
+                <select name="fixed" id="fixed" class="col-sm-2">
+                  <option value="0"> # </option>
+                  <option value="1"> 1 </option>
+                  <option value="2"> 2 </option>
+                  <option value="3"> 3 </option>
+                  <option value="4"> 4 </option>
+                  <option value="5"> 5 </option>
+                  <option value="6"> 6 </option>
+                  <option value="7"> 7 </option>
+                  <option value="8"> 8 </option>
+                  <option value="9"> 9 </option>
+                  <option value="10"> 10 </option>
+                  <option value="11"> 11 </option>
+                  <option value="12"> 12 </option>
+                  <option value="12"> 13 </option>
+                  <option value="14"> 14 </option>
+                  <option value="15"> 15+ </option>
+                </select>
+                <select name="fixed" id="fixed" class="col-sm-5">
+                  <option value="0"> Week/Months/Years </option>
+                  <option value="1"> Weeks </option>
+                  <option value="1"> Months </option>
+                  <option value="2"> Years </option>
+                </select>
+              </div>
+            </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="fix">Spay-Neuter:</label>
+              <select name="fixed" id="fixed" class="col-sm-5">
+                <option value="0"> Please Select </option>
+                <option value="1"> Yes </option>
+                <option value="2"> NO </option>
+                <option value="3"> Unknown </option>
               </select>
             </div>
           </div>
 
           <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="kid">Kid-Friendly:</label>
-              <select name="kid_friendly" id="kid_friendly">
-                <option value="0">--No--</option>
-                <option value="1">--Yes--</option>
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="shot">Shots Current:</label>
+              <select name="shots" id="shots" class="col-sm-5">
+                <option value="0"> Please Select </option>
+                <option value="1"> Yes </option>
+                <option value="2"> NO </option>
+                <option value="3"> Unknown </option>
               </select>
             </div>
           </div>
 
           <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="cat">Cat-Friendly:</label>
-                <select name="cat_friendly" id="cat_friendly"> 
-                  <option value="0">--No--</option>
-                  <option value="1">--Yes--</option>
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="kid">Kid-Friendly:</label>
+              <select name="kid_friendly" id="kid_friendly" class="col-sm-5">
+                <option value="0"> Please Select </option>
+                <option value="1"> Yes </option>
+                <option value="2"> NO </option>
+                <option value="3"> Unknown </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="cat">Cat-Friendly:</label>
+                <select name="cat_friendly" id="cat_friendly" class="col-sm-5">
+                  <option value="0"> Please Select </option>
+                  <option value="1"> Yes </option>
+                  <option value="2"> NO </option>
+                  <option value="3"> Unknown </option>
                 </select>
             </div>
           </div>
 
           <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="dog">Dog-Friendly:</label>
-                <select name="dog_friendly" id="dog_friendly"> 
-                  <option value="0">--No--</option>
-                  <option value="1">--Yes--</option>
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="dog">Dog-Friendly:</label>
+                <select name="dog_friendly" id="dog_friendly" class="col-sm-5">
+                  <option value="0"> Please Select </option>
+                  <option value="1"> Yes </option>
+                  <option value="2"> NO </option>
+                  <option value="3"> Unknown </option>
                 </select>
             </div>
           </div>
 
-
           <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="food">Food-Aggressive:</label>
-                <select name="food_aggressive" id="food_aggressive"> 
-                <option value="1">--Yes--</option>
-                <option value="0">--No--</option>
-                </select>
-            </div>
-          </div>
-
-
-          <div class="form-group row">
-            <div class="col-sm-5">
-              <label for="house">House-Trained:</label>
-              <select name="house_trained" id="house_trained"> 
-              <option value="0">--No--</option>
-              <option value="1">--Yes--</option>
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="house">Potty-Trained:</label>
+              <select name="house_trained" id="house_trained" class="col-sm-5">
+                <option value="0"> Please Select </option>
+                <option value="1"> Yes </option>
+                <option value="2"> NO </option>
+                <option value="3"> Unknown </option>
               </select>
             </div>
           </div>
 
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <label class="col-sm-6" for="food">Food-Aggression:</label>
+                <select name="food_aggressive" id="food_aggressive" class="col-sm-5">
+                  <option value="0"> Please Select </option>
+                  <option value="1"> Yes </option>
+                  <option value="2"> NO </option>
+                  <option value="3"> Unknown </option>
+                </select>
+            </div>
+          </div>
 
-          <button type="submit">Place for Addoption!</button>
-          </form>    
+          <button type="submit" class="btn btn-default btn-lg active" role="button">Place for Addoption!</button>
+          </form>
       </div>
 
 
         <div class="col-md-2">
         </div>
 
-        <div class="col-md-4" id="newUserT">
-          <div class="col-md-12" ><h1 class="adoptions3">Upload Pictures</h1>
+        <div class="col-md-5" id="newUserT">
+          <div class="col-md-12" ><h1 class="adoptions3">Upload Photos</h1>
           </div>
           <br>
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_one" method="post">
           <div class="form-group row">
             <div class="col-md-5" >
-              <label for="un">Picture 1:</label>
+              <label for="un">Image 1:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_two" method="post">
           <div class="form-group row">
             <div class="col-md-5" >
-              <label for="un">Picture 2:</label>
+              <label for="un">Image 2:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_three" method="post">
           <div class="form-group row">
             <div class="col-md-5" >
-              <label for="un">Picture 3:</label>
+              <label for="un">Image 3:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_four" method="post">
           <div class="form-group row">
             <div class="col-md-5" >
-              <label for="un">Picture 4:</label>
+              <label for="un">Image 4:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
           <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_five" method="post">
           <div class="form-group row">
             <div class="col-md-5" >
-              <label for="un">Picture 5:</label>
+              <label for="un">Image 5:</label>
               <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
               <input type="submit" name="submit" value="Upload">
-            </div>   
+            </div>
           </div>
-          </form> 
+          </form>
 
 
 
-        </div>  
-        <div class="col-md-1">                             
-        </div>       
-  </div> 
-</div>               
+        </div>
+        <div class="col-md-1">
+        </div>
+  </div>
+</div>

@@ -16,6 +16,7 @@ var multer = require('multer');
 var homepage_controller = require('./controllers/homepage');
 var adopt_controller = require('./controllers/adopt');
 var login_controller = require('./controllers/login');
+// var contactUs_controller = require('./controllers/contactUs');
 
 // Express settings
 // ================
@@ -82,6 +83,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', homepage_controller);
 app.use('/adopt', adopt_controller);
 app.use('/login', login_controller);
+// app.use('/contactUs', contactUs_controller);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
